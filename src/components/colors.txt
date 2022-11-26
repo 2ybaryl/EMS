@@ -1,0 +1,6 @@
+:root {
+    --orange : #FB892E;
+    --grey : #F0F2F5;
+    --footer-primary : #313A44;
+    --footer-secondary : #3D464F;
+}
