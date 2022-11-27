@@ -4,6 +4,7 @@ import "../common/stylesheets/Home.css";
 export default class Home extends Component {
   render() {
     return (
+      <>
       <div className="console">
         {/*  Here lies the Top Heading of the webpage */}
 
@@ -30,7 +31,7 @@ export default class Home extends Component {
                 <div class="fill">
                   <div class="mask full">
                     <div class="fill">
-                    <div class="inside-circle"> 12 </div>
+                      <div class="inside-circle"> 12 </div>
                     </div>
                   </div>
                 </div>
@@ -38,7 +39,28 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+
+        {/*  Here starts the Statistics Area */}
+        <center>
+          <div className="stats">
+            <hr />
+            <div className="titles">
+              <span>Earning</span>
+              <span>DAR Status</span>
+            </div>
+            <div className="values">
+              <span id="earning">₹ 2160</span>
+              <span id="dar">
+                <span id="completed">9</span>&nbsp; Completed &nbsp;&nbsp;
+                <span id="upcoming">0</span>&nbsp; Upcoming
+              </span>
+              <span id="target">Total Target Aug 1456 Task</span>
+            </div>
+            <hr />
+          </div>
+        </center>
       </div>
+      </>
     );
   }
 }
