@@ -66,6 +66,9 @@ export default class Home extends Component {
             <span id="today">Present</span>
             <span id="per">65%</span>
           </div>
+          <div className="bar">
+            <div className="percent"></div>
+          </div>
           <div className="values">
             <span id="dar">
               <span id="present">9</span> Present

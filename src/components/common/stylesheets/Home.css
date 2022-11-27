@@ -129,16 +129,17 @@ circle-wrap .circle .mask,
 }
 
 
-.stats{
+.stats {
   display: flex;
   flex-direction: column;
   max-width: 60vw;
 }
-.stats hr{
+
+.stats hr {
   border: 1px dashed #BBBBBB;
 }
 
-.stats .titles{
+.stats .titles {
   display: flex;
   flex-direction: row;
   font-size: 1.2em;
@@ -147,34 +148,40 @@ circle-wrap .circle .mask,
   margin-top: 4vh;
   margin-bottom: 2vh;
 }
-.stats .titles span{
+
+.stats .titles span {
   margin-right: 8em;
 }
 
-.stats .values{
+.stats .values {
   margin-bottom: 4vh;
   display: flex;
   flex-direction: row;
   max-width: 100%;
 }
-.stats .values #earning{
+
+.stats .values #earning {
   font-size: 200%;
   font-weight: 600;
   margin-right: 10%;
 }
-.stats .values #dar{
+
+.stats .values #dar {
   font-size: 120%;
   font-weight: 500;
 }
-.stats .values #completed{
+
+.stats .values #completed {
   font-size: 150%;
-  color: #22EE22;
+  color: #04CE88;
 }
-.stats .values #upcoming{
+
+.stats .values #upcoming {
   font-size: 150%;
   color: #DD5555;
 }
-.values #target{
+
+.values #target {
   margin-left: 20%;
   font-size: 150%;
   font-weight: 500;
@@ -189,46 +196,69 @@ circle-wrap .circle .mask,
   max-width: 82%;
   background: #fffaf6;
 }
-.bottom .title2{
+
+.bottom .title2 {
   display: flex;
   flex-direction: row;
   font-size: 170%;
   font-weight: 600;
 }
-.bottom .title2 #today{
+
+.bottom .title2 #today {
   margin-left: 3%;
   font-weight: 500;
-  color: #22EE22;
-}
-.bottom .title2 #per{
-  margin-left: 60%;
+  color: #04CE88;
 }
 
-.bottom .values{
-  margin-top: 2%;
+.bottom .title2 #per {
+  margin-left: 55%;
+}
+
+.bottom .bar {
+  margin-top: 5%;
+  background-color: #D9D9D9;
+  width: 90%;
+  border-radius: 15px;
+}
+.bottom .bar .percent {
+  background-color: #04CE88;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.bottom .values {
+  margin-top: 4%;
   display: flex;
   flex-direction: row;
   max-width: 100%;
 }
-.bottom .values #dar{
+
+.bottom .values #dar {
   display: flex;
   flex-direction: row;
   max-width: 100%;
   font-size: 120%;
   font-weight: 500;
 }
-.bottom .values #present{
+
+.bottom .values #present {
   margin-right: 10%;
   font-size: 180%;
-  color: #22EE22;
+  color: #04CE88;
 }
-.bottom .values #absent{
+
+.bottom .values #absent {
   margin-left: 40%;
   margin-right: 10%;
   font-size: 180%;
   color: #DD5555;
 }
-.bottom .values #leave{
+
+.bottom .values #leave {
   margin-left: 40%;
   margin-right: 10%;
   font-size: 180%;
