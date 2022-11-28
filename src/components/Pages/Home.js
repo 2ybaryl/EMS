@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 import "../common/stylesheets/Home.css";
 
 export default class Home extends Component {
@@ -24,19 +26,94 @@ export default class Home extends Component {
 
           {/*  Here starts the Center of the console - the progress circles */}
 
-          <div>
-            <div class="circle-wrap">
-              <div class="circle">
-                <div class="mask half">
-                  <div class="fill">
-                    <div class="mask full">
-                      <div class="fill">
-                        <div class="inside-circle"> 12 </div>
-                      </div>
+          <div className="center">
+            <div className="left">
+              <div id="total">
+                <CircularProgressbar
+                  value={69}
+                  text={`12 Total Tasks`}
+                  styles={buildStyles({
+                    textSize: "80%",
+                    textColor: "#555555",
+                    pathColor: "#009788",
+                  })}
+                />
+              </div>
+            </div>
+            <span className="black"></span>
+            <div className="right">
+              <center>
+                <div className="status">
+                  <div id="curr">
+                    <div id="prog">
+                    <CircularProgressbar
+                      value={50}
+                      text={`09`}
+                      styles={buildStyles({
+                        rotation:'0.3',
+                        textSize: "200%",
+                        textColor: "#555555",
+                        pathColor: "#009788",
+                      })}
+                    ></CircularProgressbar></div>
+                    <div id="stat">
+                      <span id="head">COMPLETE</span>
+                      <span>09 Task</span>
+                    </div>
+                  </div>
+                  <div id="curr">
+                    <div id="prog">
+                    <CircularProgressbar
+                      value={50}
+                      text={`12`}
+                      styles={buildStyles({
+                        rotation:'0.3',
+                        textSize: "200%",
+                        textColor: "#555555",
+                        pathColor: "#2c6be3",
+                      })}
+                    ></CircularProgressbar></div>
+                    <div id="stat">
+                      <span id="head">ONGOING</span>
+                      <span>12 Task</span>
+                    </div>
+                  </div>
+                  <div id="curr">
+                    <div id="prog">
+                    <CircularProgressbar
+                      value={50}
+                      text={`08`}
+                      styles={buildStyles({
+                        rotation:'0.3',
+                        textSize: "200%",
+                        textColor: "#555555",
+                        pathColor: "#f19919",
+                      })}
+                    ></CircularProgressbar></div>
+                    <div id="stat">
+                      <span id="head">INACTIVE</span>
+                      <span>08 Task</span>
+                    </div>
+                  </div>
+                  <div id="curr">
+                    <div id="prog">
+                    <CircularProgressbar
+                      value={50}
+                      text={`03`}
+                      styles={buildStyles({
+                        rotation:'0.3',
+                        textSize: "200%",
+                        textColor: "#555555",
+                        pathColor: "#c40030",
+                      })}
+                    ></CircularProgressbar></div>
+                    <div id="stat">
+                      <span id="head">PENDING</span>
+                      <span>03 Task</span>
                     </div>
                   </div>
                 </div>
-              </div>
+              </center>
             </div>
           </div>
 
@@ -71,8 +148,8 @@ export default class Home extends Component {
           </div>
           <div className="values">
             <span id="dar">
-              <span id="present">9</span> Present
-              <span id="absent">0</span> Absent
+              <span id="present">22</span> Present
+              <span id="absent">2</span> Absent
               <span id="leave">0</span> Leave
             </span>
           </div>
