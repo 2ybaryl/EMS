@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './stylesheets/Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +17,7 @@ class Header extends React.Component {
                     </div>
                     <div className = "main-nav">
                         <ul>
-                            <li>My Account &#9013;</li>
+                            <li><Link to = "/myAccount">My Account</Link> &#9013;</li>
                             <li>More &#9013;</li>
                         </ul>
                     </div>
@@ -26,13 +27,13 @@ class Header extends React.Component {
                 </div>
                 <div className="sub-header">
                     <ul className="sub-nav">
-                        <li>Home</li>
+                        <li><Link to = "/">Home</Link></li>
                         <li>Order Tracking</li>
-                        <li>Target</li>
-                        <li>Attendance</li>
-                        <li>Daily Working</li>
-                        <li>Weekly Plan</li>
-                        <li>Request</li>
+                        <li><Link to = "/target">Target</Link></li>
+                        <li><Link to = "/attendance">Attendance</Link></li>
+                        <li><Link to = "/dailyWorking">Daily Working</Link></li>
+                        <li><Link to = "/weeklyPlan">Weekly Plan</Link></li>
+                        <li><Link to = "/request">Request</Link></li>
                     </ul>
                 </div>
             </header>
